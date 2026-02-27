@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    overflow: hidden;
+}
+
+.gradient-text {
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 9rem;
+    font-weight: 525;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.gradient-text::before,
+.gradient-text::after {
+    content: "sex";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    background: linear-gradient(120deg, #ff00c1, #00fff0, #ff00c1);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 3s linear infinite;
+}
+
+.gradient-text::before {
+    filter: blur(20px);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
