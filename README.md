@@ -1,4 +1,4 @@
-для особо тупых нахуй видео гайд снял:
+для особо отсталых нахуй видео гайд снял:
 
 https://github.com/user-attachments/assets/ab4e6f4b-363d-45ca-a064-f0cef1863bdc
 
